@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5px" >
+
+    <ImageView
+        android:id="@+id/screen_filetrans_queue_item_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/document_up_48" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/screen_filetrans_queue_item_textView_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/screen_filetrans_queue_item_imageView"
+        android:background="@color/color_light"
+        android:padding="1px"
+        android:text="arc_de_triomphe.3gp"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/screen_filetrans_queue_item_textView_remoteUri"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen_filetrans_queue_item_textView_name"
+        android:layout_toRightOf="@+id/screen_filetrans_queue_item_imageView"
+        android:text="sip:unknown@open-ims.test" >
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/screen_filetrans_queue_item_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen_filetrans_queue_item_textView_remoteUri"
+        android:layout_toRightOf="@+id/screen_filetrans_queue_item_imageView" >
+    </ProgressBar>
+
+</RelativeLayout>

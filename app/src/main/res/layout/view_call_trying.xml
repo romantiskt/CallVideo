@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/view_call_trying_textView_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10px"
+        android:gravity="center_horizontal"
+        android:text="Outgoing Call"
+        android:textColor="@color/color_white"
+        android:textSize="30dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/view_call_trying_imageView_avatar"
+        android:layout_width="126dp"
+        android:layout_height="127dp"
+        android:layout_alignLeft="@+id/view_call_trying_textView_info"
+        android:layout_alignRight="@+id/view_call_trying_textView_info"
+        android:layout_below="@+id/view_call_trying_textView_info"
+        android:layout_margin="5px"
+        android:src="@drawable/android_avatar_big" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/view_call_trying_textView_remote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sview_call_trying_imageView_avatar"
+        android:layout_alignRight="@+id/view_call_trying_imageView_avatar"
+        android:layout_below="@+id/view_call_trying_imageView_avatar"
+        android:layout_marginBottom="6px"
+        android:layout_marginLeft="6px"
+        android:layout_marginRight="6px"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:text="John Doe"
+        android:textColor="@color/color_white"
+        android:textSize="25dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/view_call_trying_linearLayout_pick_or_hang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_call_trying_textView_remote"
+        android:layout_marginBottom="3px"
+        android:layout_marginLeft="3px"
+        android:layout_marginRight="3px"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:weightSum="6" >
+
+        <ImageButton
+            android:id="@+id/view_call_trying_imageButton_hang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="3"
+            android:src="@drawable/phone_hang_up_48"
+            android:text="Decline" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/view_call_trying_imageButton_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="3"
+            android:src="@drawable/phone_pick_up_48"
+            android:text="Answer" >
+        </ImageButton>
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/sview_call_trying_imageView_avatar"
+        android:layout_alignRight="@+id/sview_call_trying_imageView_avatar"
+        android:layout_below="@+id/sview_call_trying_imageView_avatar"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keyboard" >
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/view_call_trying_keyboard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2px"
+                android:layout_weight="2"
+                layout="@layout/view_dialer_buttons" />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>
