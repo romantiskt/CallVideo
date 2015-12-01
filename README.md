@@ -2,8 +2,11 @@
 说明:
    这是一个基于Dubango Imsdroid的实时音视频的demo
    
-  ^^1.实现了网络电话
-  ^^2.实现了网络视频
+ 1.实现了网络电话
+  
+ 2.实现了网络视频
+ 
+ **请用真机测试
 ***
  ![](https://github.com/romantiskt/CallVideo/blob/master/app/sources/show.gif)
 
