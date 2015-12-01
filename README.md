@@ -1,9 +1,14 @@
 # CallVideo
 说明:
    这是一个基于Dubango Imsdroid的实时音视频的demo
-   >>实现了网络电话
+   
+ 1.实现了网络电话
   
-   >>实现了网络视频
+ 2.实现了网络视频
+ 
+ **请用真机测试
+***
+ ![](https://github.com/romantiskt/CallVideo/blob/master/app/sources/show.gif)
 
 #Quick Start
  > 1.将项目下载,并添加dubango的androidndnstack依赖
