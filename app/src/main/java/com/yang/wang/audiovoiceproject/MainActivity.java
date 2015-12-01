@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         super.onResume();
         if (!mEngine.isStarted()) {
             if (mEngine.start()) {//Engine started
+
             } else {//Failed to start the engine
             }
         }
@@ -103,14 +104,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
        switch (id){
            case R.id.bt_audio:
                Intent intent1=new Intent(this,Main.class);
-               intent1.putExtra(Constants.AUDIO_PHONENUMBER,"10000070");
+               intent1.putExtra(Constants.AUDIO_PHONENUMBER,"10000072");
                intent1.putExtra(Constants.IS_AUDIO_OR_VIDEO, true);//true为语音
 
                startActivity(intent1);
                break;
            case R.id.bt_video:
                Intent intent2=new Intent(MainActivity.this,Main.class);
-               intent2.putExtra(Constants.AUDIO_PHONENUMBER, "10000070");//为对方的帐号
+               intent2.putExtra(Constants.AUDIO_PHONENUMBER, "10000072");//为对方的帐号
                intent2.putExtra(Constants.IS_AUDIO_OR_VIDEO, false);//true为语音
                startActivity(intent2);
                break;
