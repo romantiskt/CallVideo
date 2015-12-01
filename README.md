@@ -1,10 +1,9 @@
 # CallVideo
 说明:
    这是一个基于Dubango Imsdroid的实时音视频的demo
-   >>实现了网络电话
-  
-   >>实现了网络视频
-   ***
+  '1实现了网络电话
+  '2实现了网络视频
+***
  ![](https://github.com/romantiskt/CallVideo/blob/master/app/sources/show.gif)
 
 #Quick Start
