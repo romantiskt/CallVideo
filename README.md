@@ -4,6 +4,7 @@
    >>实现了网络电话
   
    >>实现了网络视频
+   ![](https://github.com/CallVideo/app/sources/show.gif)
 
 #Quick Start
  > 1.将项目下载,并添加dubango的androidndnstack依赖
